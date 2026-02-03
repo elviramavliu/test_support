@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Тестовая страница с Adfox</title>
+  <title>Тестовая страница: Adfox + РСЯ</title>
 
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f6f7f9; color: #1f2937; }
@@ -28,10 +28,11 @@
   <main>
     <section class="card">
       <h1>Пример страницы</h1>
-      <p>Это случайный текст для заполнения контента: сегодня я тестирую вёрстку, отступы и типографику.</p>
-      <p>Ниже расположен рекламный блок, который должен подгружаться через Adfox.</p>
+      <p>Это случайный текст для заполнения контента: проверяем вёрстку, отступы и загрузку рекламных блоков.</p>
+      <p>Ниже расположены два рекламных места: Adfox и РСЯ.</p>
     </section>
 
+    <!-- МЕСТО 1: Adfox -->
     <section class="card ad-wrap">
       <div class="ad-label">Adfox</div>
 
@@ -59,9 +60,25 @@
       <!--AdFox END-->
     </section>
 
+    <!-- МЕСТО 2: РСЯ (Yandex.RTB) -->
+    <section class="card ad-wrap">
+      <div class="ad-label">РСЯ</div>
+
+      <!-- Yandex.RTB R-A-1314909-12 -->
+      <div id="yandex_rtb_R-A-1314909-12"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            blockId: "R-A-1314909-12",
+            renderTo: "yandex_rtb_R-A-1314909-12"
+          });
+        });
+      </script>
+    </section>
+
     <section class="card">
       <h2>Ещё немного текста</h2>
-      <p>Дополнительный абзац для проверки, как страница выглядит при прокрутке и как ведут себя блоки.</p>
+      <p>Дополнительный абзац, чтобы страница выглядела как реальная: можно добавить список, картинки или длинный текст.</p>
     </section>
   </main>
 
