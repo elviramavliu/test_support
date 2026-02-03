@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тестовая страница с Adfox</title>
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f6f7f9; color: #1f2937; }
+    header, footer { background: #111827; color: #fff; padding: 16px 20px; }
+    main { max-width: 960px; margin: 0 auto; padding: 20px; }
+    .card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 8px rgba(0,0,0,.06); margin-bottom: 16px; }
+    .ad-wrap { border: 1px dashed #cbd5e1; border-radius: 12px; padding: 14px; background: #fff; }
+    .ad-label { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: #64748b; margin-bottom: 10px; }
+  </style>
+
+  <!-- В <head> сайта один раз добавьте код загрузчика -->
+  <script>window.yaContextCb = window.yaContextCb || [];</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+
+<body>
+  <header>
+    <strong>Мой сайт</strong><br />
+    Демонстрационная страница (header)
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Пример страницы</h1>
+      <p>Это случайный текст для заполнения контента: сегодня я тестирую вёрстку, отступы и типографику.</p>
+      <p>Ниже расположен рекламный блок, который должен подгружаться через Adfox.</p>
+    </section>
+
+    <section class="card ad-wrap">
+      <div class="ad-label">Adfox</div>
+
+      <!--AdFox START-->
+      <!--yandex_elviramavliu-->
+      <!--Площадка: https://www.fragrantica.ru/ / Все страницы / HTML-->
+      <!--Категория: <не задана>-->
+      <!--Баннер: <не задана>-->
+      <!--Тип баннера: HTML-->
+      <div id="adfox_177010928270871211"></div>
+      <script>
+        window.yaContextCb.push(() => {
+          Ya.adfoxCode.create({
+            ownerId: 391204,
+            containerId: 'adfox_177010928270871211',
+            params: {
+              p1: 'dgxgt',
+              p2: 'jdxt',
+              pfc: 'hppfr',
+              pfb: 'biiffm'
+            }
+          });
+        });
+      </script>
+      <!--AdFox END-->
+    </section>
+
+    <section class="card">
+      <h2>Ещё немного текста</h2>
+      <p>Дополнительный абзац для проверки, как страница выглядит при прокрутке и как ведут себя блоки.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 • Подвал сайта (footer)
+  </footer>
+</body>
+</html>
